@@ -31,7 +31,7 @@ function confirmation(ev) {
     ev.preventDefault();
 
     swal({
-        title: "Product Successfully Added",
+        title: "Product Successfully Updated",
         text: "Details saved",
         icon: "success",
         buttons: true,

@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class order extends Controller
+class SliderController extends Controller
 {
-    public function order()
+    public function slider()
     {
-        return view('order');
+        return view('slider');
     }
 }
+

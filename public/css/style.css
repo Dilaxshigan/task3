@@ -6,3 +6,10 @@
     height: 80px;
     width: 126px;
 }
+/* main content section */
+.bg-custom {
+    background-color: #2C1708;
+}
+.no-hover-1:hover {
+    background-color: #2C1708; 
+}

@@ -1,0 +1,20 @@
+.text-custom {
+    color: #2C1708;
+}
+
+.border-custom {
+    border: 2px solid #2C1708; 
+}
+
+.no-hover:hover {
+    background-color: white; 
+    color: #2C1708; 
+    border-color: #2C1708; 
+}
+.display-img{
+   width: 84px; 
+   height: 84px;
+}
+.btn-link i {
+    color: black;
+}

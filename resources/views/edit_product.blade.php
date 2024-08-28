@@ -2,17 +2,17 @@
 @section('title','')
 @section('main-content')
 
-<div class= "fs-4 mt-3 ms-5">Product Management > Add Product</div>
+<div class= "fs-4 mt-3 ms-5">Product Management > Update Product</div>
 
 <div class="container my-5">
         <div class="card shadow p-4">
-        <form action="{{ route('upload_product') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('update_product', $data->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf 
 
                 <!-- Name -->
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="title">
+                    <input type="text" class="form-control" id="name" name="title" value="{{$data->title}}">
                 </div>
                 
                 <!-- Model Number -->
@@ -35,7 +35,7 @@
                 <!-- Product Details -->
                 <div class="mb-3">
                     <label for="productDetails" class="form-label">Product details</label>
-                    <textarea class="form-control" id="productDetails" rows="3" name="description"></textarea>
+                    <textarea class="form-control" id="productDetails" rows="3" name="description" value="{{$data->description}}"></textarea>
                 </div>
 
                 <!-- How to Use -->
@@ -55,7 +55,7 @@
                          <div class="d-flex justify-content-between align-items-center border-top pt-2 mb-3">
                              <div class="w-25">
                                    <label for="price" class="form-label">Price</label>
-                                   <input type="text" class="form-control" id="price" name="price">
+                                   <input type="text" class="form-control" id="price" name="price" value="{{$data->price}}">
                              </div>
                              <div class="w-25">
                                    <label for="weight" class="form-label">Weight</label>
