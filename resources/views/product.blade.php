@@ -10,7 +10,7 @@
     </div>
 
     <div class="d-flex flex-column align-items-end mb-3">
-       <a href="#" class="btn text-custom border-custom bg-white no-hover">Category Management</a>
+       <a href="{{ route('category') }}" class="btn text-custom border-custom bg-white no-hover">Category Management</a>
     </div>
 
     <div class="row g-4 mt-3">

@@ -4,7 +4,7 @@
 
 <div class= "fs-4 mt-3 ms-5">Product Management > Add Product</div>
 
-<div class="container my-5">
+<div class="container custom-width my-5">
         <div class="card shadow p-4">
         <form action="{{ route('upload_product') }}" method="POST" enctype="multipart/form-data">
                 @csrf 

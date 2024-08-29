@@ -13,3 +13,6 @@
 .no-hover-1:hover {
     background-color: #2C1708; 
 }
+.btn-link i {
+    color: black;
+}
